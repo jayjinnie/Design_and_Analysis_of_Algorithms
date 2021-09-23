@@ -5,3 +5,5 @@ void seqsearch (int n, const keytype S[], keytype x, index& location) {
   if (location >= n)
    location = 0;
 }
+
+# Worst-case Analysis, T(n) = n
