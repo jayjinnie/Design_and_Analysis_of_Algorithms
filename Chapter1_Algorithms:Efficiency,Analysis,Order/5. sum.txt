@@ -1,0 +1,11 @@
+number sum (int n, const number S[]) {
+  index i;
+  number result;
+  result = 0;
+  
+  for (i = 1; i <= n; i++)
+    result = result + S[i];
+  return result
+ }
+ 
+ # Every-case Analysis, T(n) = n
