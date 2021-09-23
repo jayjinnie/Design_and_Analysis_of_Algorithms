@@ -1,0 +1,10 @@
+void exchangesort (int n, keytype S[]) {
+  index i, j;
+  
+  for (i = 1; i <= n-1; i++) 
+    for (j = i+1; j <= n; j++)
+      if (S[j] < S[i])
+        exchange s[i] and S[j];
+}
+
+# Every-case Analysis, T(n) = n
