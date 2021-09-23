@@ -14,3 +14,5 @@ void binsearch (int n, const keytype S[], keytype x, index& location) {
     low = mid + 1;
   }
 }
+
+# Worst-case Analysis, O(log(n))
