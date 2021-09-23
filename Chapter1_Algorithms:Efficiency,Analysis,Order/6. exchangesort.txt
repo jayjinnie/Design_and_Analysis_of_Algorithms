@@ -7,4 +7,4 @@ void exchangesort (int n, keytype S[]) {
         exchange s[i] and S[j];
 }
 
-# Every-case Analysis, T(n) = n
+# Every-case Analysis, T(n) = {(n-1)*n}/2
