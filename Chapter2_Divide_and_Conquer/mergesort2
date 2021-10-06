@@ -1,0 +1,33 @@
+# Space Complexity를 개선한 Merge Sort
+
+void merge2(index low, index mid, index high) {
+  index i = low, j = mid+1, k = low;
+  keytype U[low...high]
+  while(i <= mid && j <= high) {
+    if (S[i] < S[j]) {
+      U[k] = S[i];
+      i++;
+    }
+    else {
+      U[k] = S[j];
+      j++;
+    }
+  if (i>mid)
+    copy S[j] through S[high] to U[k] through U[high];
+  else
+    copy S[i] through S[mid] to U[k] through U[high];
+  copy U[low] through U[high] to S[low] through S[high];
+}
+
+void mergesort2 (index low, index high) {
+  index mid;
+  if (low < high) {
+    mid = (low+high)/2;
+    mergesort2(low,mid);
+    mergesort2(mid+1,high);
+    # 위 두 recursion만 있다면 tail-recursion으로 구현됨
+    merge2(low,mid,high);
+    }
+}
+mergesort2(1,n);
+ 
