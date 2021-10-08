@@ -1,0 +1,14 @@
+# Strassen's nxn Matrix Multiplication Algorithm
+
+void strassen (int n, n*n_matrix A, n*n_matrix B, n*n_matrix& C) {
+  if (n <= threshold)
+    Compute C = A * B;
+  else {
+    partition A into four submatrices A11, A12, A21, A22;
+    partition B into four submatrices B11, B12, B21, B22;
+    Compute C = A * B using strassen's method;
+  }
+}
+
+# example recursive call:
+# strassen(n/2, A11+A12, B11+B22, M1) ... 총 7번 반복
