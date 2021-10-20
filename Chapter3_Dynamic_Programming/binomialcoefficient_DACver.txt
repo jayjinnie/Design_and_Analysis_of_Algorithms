@@ -8,3 +8,4 @@ void bin(int n, int k) {
 }
 
 # Design Complexity는 낮지만, Very inefficient
+# n! time complexity 
