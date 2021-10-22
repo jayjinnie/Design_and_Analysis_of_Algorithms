@@ -1,0 +1,20 @@
+# Minimum Multiplication Algorithm - Chained Matrix Multiplication
+
+int minmult (int n, const int d[], index P[][]) {
+  index i, j, k, diagonal;
+  int M[1..n, 1..n];
+  
+  for (i=1; i<=n; i++)
+    M[i][i] = 0;
+    
+   for(digonal=1; diagonal<=n-1; diagonal++;) {
+    for(i=1; i<=n-diagonal; i++) {
+      j = i+diagonal;
+      M[i][j] = minimum(M[i][k] + M[k+1][j] + d[i-1]*d[k]*d[j]);
+      
+      where i <= k <= j-1
+      P[i][j] = a value of k that gave the min;
+    }
+  }
+  return M[1][n];
+}
